@@ -45,6 +45,26 @@ const meals = [
     type: "hot"
   },
   {
+    name: "Galeto de frangos felizes",
+    ingredients: ["maionese", "batata rosa", "cenoura", "cebola", "alho", "milho", "molho de tomate", "espagueti", "proteína"],
+    type: "hot"
+  },
+  {
+    name: "Feijão tropeiro",
+    ingredients: ["feijão", "farinha de mandioca", "cenoura", "couve", "cebola", "alho"],
+    type: "hot"
+  },
+  {
+    name: "Arroz e feijão",
+    ingredients: ["arroz", "feijão", "cebola", "alho"],
+    type: "hot"
+  },
+  {
+    name: "Tofu e legumes ao shoyo com arroz",
+    ingredients: ["arroz", "tofu", "pimentão", "cebola", "cenoura", "abobrinha", "shoyo"],
+    type: "hot"
+  },
+  {
     name: "Salada de quinoa",
     ingredients: ["quinoa", "tomate", "pimentão", "abacate", "limão", "coentro"],
     type: "salad"

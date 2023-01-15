@@ -1,5 +1,15 @@
 const meals = [
   {
+    name: "Escondidinho",
+    ingredients: ["batata ou aipim", "picado carnal", "molho de tomate", "cebola", "alho"],
+    type: "hot"
+  },
+  {
+    name: "Almondegas com arroz",
+    ingredients: ["almondegas", "molho de tomate", "arrox",],
+    type: "hot"
+  },
+  {
     name: "Lasanha de berinjela",
     ingredients: ["berinjela", "molho de tomate", "molho branco", "queijo vegano", "massa de lasanha"],
     type: "hot"

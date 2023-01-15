@@ -105,7 +105,7 @@ const meals = [
     type: "soup"
   },
   {
-    name: "Sopa de moranaga cremosa",
+    name: "Sopa de moranga cremosa",
     ingredients: ["moranaga", "cebola", "alho"],
     type: "soup"
   },

@@ -86,7 +86,7 @@ const meals = [
   },
   {
     name: "Canja sem galinha",
-    ingredients: ["cenoura", "cebola", "alho", "batata", "arroz", "tempero verde", "proteína (grão de bico ou heura)"],
+    ingredients: ["cenoura", "cebola", "alho", "batata", "arroz", "tempero verde", "proteína (grão de bico ou Heura)"],
     type: "soup"
   },
   {
@@ -136,7 +136,7 @@ const meals = [
   },
   {
     name: "Subway",
-    ingredients: ["maionese ou humus", "baguete", "tomate", "alface", "cebola roxa", "heura"],
+    ingredients: ["maionese ou humus", "baguete", "tomate", "alface", "cebola roxa", "Heura"],
     type: "sandwich"
   },
   {

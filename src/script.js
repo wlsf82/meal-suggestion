@@ -80,7 +80,7 @@ const meals = [
     type: "salad"
   },
   {
-    name: "Salada de quinoa e castanhas",
+    name: "Salada de quinoa e pistachos",
     ingredients: ["quinoa", "pistacho", "cenoura ralada", "ervilha", "edamame", "gengibre", "agave"],
     type: "salad"
   },

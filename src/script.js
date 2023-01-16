@@ -5,6 +5,11 @@ const meals = [
     type: "hot"
   },
   {
+    name: "À la minuta",
+    ingredients: ["batata frita", "arroz", "proteína", "feijão"],
+    type: "hot"
+  },
+  {
     name: "Almondegas com arroz",
     ingredients: ["almondegas", "molho de tomate", "arrox",],
     type: "hot"

@@ -1,4 +1,4 @@
-name: Upload Website
+name: CI/CD
 
 on:
   push:

@@ -6,7 +6,7 @@ const meals = [
   },
   {
     name: "Arroz exótico",
-    ingredients: ["arroz branco", "tofu", "brócolis", "ervilha", "cenoura"],
+    ingredients: ["arroz", "tofu", "brócolis", "ervilha", "cenoura"],
     type: "hot"
   },
   {

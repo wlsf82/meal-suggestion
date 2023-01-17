@@ -1,0 +1,24 @@
+{
+  "name": "meal-suggestion",
+  "version": "1.0.0",
+  "description": "Gerador de refeições veganas com suas listas de ingredientes.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsf82/meal-suggestion.git"
+  },
+  "keywords": [],
+  "author": "Walmyr <wlsf82@gmail.com> (https://walmyr.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wlsf82/meal-suggestion/issues"
+  },
+  "homepage": "https://github.com/wlsf82/meal-suggestion#readme",
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  }
+}

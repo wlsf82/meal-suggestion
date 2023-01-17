@@ -186,6 +186,13 @@ const meals = [
   },
 ];
 
+const mealEnum = Object.freeze({
+  hot: 'prato quente',
+  salad: 'salada',
+  sandwich: 'sanduíche',
+  soup: 'sopa'
+})
+
 const mealName = document.getElementById("meal-name");
 const ingredientsLabel = document.getElementById("ingredients-label");
 const ingredientsList = document.getElementById("ingredients-list");
@@ -205,7 +212,7 @@ mealTypeFilter.addEventListener("change", e => {
 
 function generateMeal() {
   const randomMeal = filteredMeals[Math.floor(Math.random() * filteredMeals.length)];
-  mealName.innerHTML = `Refeição: ${randomMeal.name}`;
+  mealName.innerHTML = `Refeição: ${randomMeal.name} (${mealEnum[randomMeal.type]})`;
   ingredientsList.innerHTML = "";
   for (const ingredient of randomMeal.ingredients) {
     const listItem = document.createElement("li");

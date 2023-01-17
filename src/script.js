@@ -5,6 +5,11 @@ const meals = [
     type: "hot"
   },
   {
+    name: "Arroz exótico",
+    ingredients: ["arroz branco", "tofu", "brócolis", "ervilha", "cenoura"],
+    type: "hot"
+  },
+  {
     name: "À la minuta",
     ingredients: ["batata frita", "arroz", "proteína", "feijão"],
     type: "hot"

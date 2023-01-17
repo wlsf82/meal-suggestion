@@ -212,7 +212,7 @@ mealTypeFilter.addEventListener("change", e => {
 
 function generateMeal() {
   const randomMeal = filteredMeals[Math.floor(Math.random() * filteredMeals.length)];
-  mealName.innerHTML = `Refeição: ${randomMeal.name} (${mealEnum[randomMeal.type]})`;
+  mealName.innerHTML = `Refeição: ${randomMeal.name}`;
   ingredientsList.innerHTML = "";
   for (const ingredient of randomMeal.ingredients) {
     const listItem = document.createElement("li");

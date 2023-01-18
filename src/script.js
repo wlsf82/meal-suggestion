@@ -16,7 +16,7 @@ const meals = [
   },
   {
     name: "Almondegas com arroz",
-    ingredients: ["almondegas", "molho de tomate", "arrox",],
+    ingredients: ["almondegas", "molho de tomate", "arroz",],
     type: "hot"
   },
   {

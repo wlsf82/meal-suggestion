@@ -17,6 +17,7 @@ describe('Meal suggestion', () => {
     cy.contains('button', 'Outra sugestão')
       .as('button')
       .should('be.visible')
+    cy.get('body').should('have.css', 'background-color', 'rgb(254, 246, 228)')
   })
 
   it('shows one of all meal suggestions', () => {

@@ -6,7 +6,16 @@ on:
     - main
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install modules
+      run: npm install
+    - name: Run ESLint
+      run: npm run lint
   pre-deployment-tests:
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

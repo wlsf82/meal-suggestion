@@ -7,7 +7,7 @@
     "cy:open": "cypress open",
     "cy:open:prod": "cypress open --env environment=prod",
     "test": "cypress run",
-    "test:prod": "cypress run --env environment=prod --record"
+    "test:prod": "cypress run --env environment=prod --record --tag 'prod'"
   },
   "repository": {
     "type": "git",

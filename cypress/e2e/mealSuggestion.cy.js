@@ -1,6 +1,10 @@
 describe('Meal suggestion', () => {
   beforeEach(() => {
-    cy.visit('../../src/index.html')
+    if (Cypress.env('environment') === 'prod') {
+      cy.visit('https://meal-suggestion.s3.eu-central-1.amazonaws.com/index.html')
+    } else {
+      cy.visit('./src/index.html')
+    }
     cy.title().should('be.equal', 'Sugestão de Refeição Vegana')
     cy.contains('h1', 'Gerador de refeição vegana 🌱').should('be.visible')
     cy.contains('#meal-name', 'Refeição: ')

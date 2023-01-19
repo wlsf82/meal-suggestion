@@ -13,5 +13,6 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           record: true
+          tag: local
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}

@@ -16,6 +16,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           record: true
+          tag: local
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
   deploy:
@@ -34,3 +35,18 @@ jobs:
 
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./src/ s3://meal-suggestion --delete
+  post-deployment-tests:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run Cypress tests 🧪
+        uses: cypress-io/github-action@v5
+        with:
+          record: true
+          tag: prod
+          command: npm run test:prod
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}

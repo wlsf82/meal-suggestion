@@ -5,7 +5,9 @@
   "main": "cypress.config.js",
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run"
+    "cy:open:prod": "cypress open --env environment=prod",
+    "test": "cypress run",
+    "test:prod": "cypress run --env environment=prod"
   },
   "repository": {
     "type": "git",

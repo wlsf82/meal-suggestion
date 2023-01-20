@@ -34,7 +34,7 @@ Este projeto utiliza o [Cypress.io](https://cypress.io) para os testes _end-to-e
 
 ### Modo _headless_
 
-Execute `npm test` (ou `npm t` para a versão curta) para rodar todos os testes em modo _headless_.
+Execute `npm test` (ou `npm t`, para a versão curta) para rodar todos os testes em modo _headless_.
 
 ### Modo interativo
 

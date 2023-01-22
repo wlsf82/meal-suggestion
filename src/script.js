@@ -19,9 +19,11 @@ mealTypeFilter.addEventListener('change', e => {
   if (selectedType === 'all') {
     // eslint-disable-next-line no-undef
     filteredMeals = [...meals]
+    generateMeal()
   } else {
     // eslint-disable-next-line no-undef
     filteredMeals = meals.filter(meal => meal.type === selectedType)
+    generateMeal()
   }
 })
 

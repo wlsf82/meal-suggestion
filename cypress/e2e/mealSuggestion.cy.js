@@ -39,9 +39,6 @@ describe('Meal suggestion', () => {
 
   it('shows a filtered meal suggestion', () => {
     cy.get('select#meal-type-filter').select('Saladas')
-    cy.get('@button')
-      .click()
-      .blur()
 
     cy.get('@mealName')
       .should('be.visible')

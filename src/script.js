@@ -10,6 +10,7 @@ const ingredientsLabel = document.getElementById('ingredients-label')
 const ingredientsList = document.getElementById('ingredients-list')
 const generateMealButton = document.getElementById('generate-meal-button')
 const mealTypeFilter = document.getElementById('meal-type-filter')
+const searchField = document.getElementById('search-field')
 
 // eslint-disable-next-line no-undef
 let filteredMeals = [...meals]
@@ -27,11 +28,33 @@ mealTypeFilter.addEventListener('change', e => {
   }
 })
 
+let searchedMeal
+
+searchField.addEventListener('change', e => {
+  searchedMeal = e.target.value.toLowerCase()
+
+  filteredMeals.forEach(filteredMeal => {
+    if (filteredMeal.name.toLowerCase().includes(searchedMeal)) {
+      showMealName(filteredMeal)
+      showIngredients(filteredMeal.ingredients)
+    }
+  })
+})
+
 function generateMeal() {
   const randomMeal = filteredMeals[Math.floor(Math.random() * filteredMeals.length)]
-  mealName.innerHTML = `Refeição: ${randomMeal.name} (${mealEnum[randomMeal.type]})`
+  showMealName(randomMeal)
+  showIngredients(randomMeal.ingredients)
+  searchField.value = ''
+}
+
+function showMealName(meal) {
+  mealName.innerHTML = `Refeição: ${meal.name} (${mealEnum[meal.type]})`
+}
+
+function showIngredients(ingredients) {
   ingredientsList.innerHTML = ''
-  for (const ingredient of randomMeal.ingredients) {
+  for (const ingredient of ingredients) {
     const listItem = document.createElement('li')
     ingredientsLabel.innerHTML = 'Ingredientes:'
     listItem.innerHTML = ingredient

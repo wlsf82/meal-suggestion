@@ -77,6 +77,28 @@ describe('Meal suggestion', () => {
       .should('equal', 8)
   })
 
+  it('makes sure trim works when searching', () => {
+    cy.get('#search-field')
+      .type('pepino    ')
+    cy.get('#search-container button[type="submit"]')
+      .click()
+      .blur()
+
+    cy.get('@mealName')
+      .should('be.visible')
+      .and('contain', 'pepino (sanduíche)')
+    cy.get('@ingredientsLabel').should('be.visible')
+    cy.get('@ingredients')
+      .should('be.visible')
+      .and('contain', 'humus ou margarina')
+      .and('contain', 'pão francês')
+      .and('contain', 'tomate')
+      .and('contain', 'pepino')
+      .and('contain', 'pimenta do reino')
+      .its('length')
+      .should('equal', 5)
+  })
+
   it('searches for a meal by typing and pressing ENTER', () => {
     cy.get('#search-field')
       .type('Ramen{enter}')

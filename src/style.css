@@ -8,15 +8,18 @@ label {
   font-weight: bold;
 }
 select {
-  border: 1px solid #001858;
+  border: 2px solid #001858;
+  border-radius: 4px;
   margin-left: 21px;
+  height: 1.5rem;
 }
 #search-container {
   margin-top: 12px;
 }
 #search-container input[type="text"] {
   width: 180px;
-  border: 1px solid #001858;
+  border: 2px solid #001858;
+  border-radius: 4px;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #f582ae;

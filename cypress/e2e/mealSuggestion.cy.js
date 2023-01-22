@@ -52,7 +52,32 @@ describe('Meal suggestion', () => {
       .should('be.at.least', 1)
   })
 
-  it('searches for a meal', () => {
+  it('searches for a meal by typing and clicking the submit button', () => {
+    cy.get('#search-field')
+      .type('Ramen')
+    cy.get('#search-container button[type="submit"]')
+      .click()
+      .blur()
+
+    cy.get('@mealName')
+      .should('be.visible')
+      .and('contain', 'Ramen (sopa)')
+    cy.get('@ingredientsLabel').should('be.visible')
+    cy.get('@ingredients')
+      .should('be.visible')
+      .and('contain', 'massa de ramen')
+      .and('contain', 'brócolis')
+      .and('contain', 'cenoura')
+      .and('contain', 'edamame')
+      .and('contain', 'tofu')
+      .and('contain', 'cebolinha')
+      .and('contain', 'misô')
+      .and('contain', 'milho')
+      .its('length')
+      .should('equal', 8)
+  })
+
+  it('searches for a meal by typing and pressing ENTER', () => {
     cy.get('#search-field')
       .type('Ramen{enter}')
       .blur()

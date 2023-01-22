@@ -14,9 +14,9 @@ select {
 #search-container {
   margin-top: 12px;
 }
-#search-container input {
-  width: 250px;
-  border: 1px solid #001858 ;
+#search-container input[type="text"] {
+  width: 180px;
+  border: 1px solid #001858;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #f582ae;
@@ -31,11 +31,13 @@ select {
 h1 {
   color: #f582ae;
 }
-#generate-meal-button {
+button {
   padding: 4px 8px;
   background-color: #f582ae;
   border-radius: 8px;
   border: 2px solid #001858;
+}
+#generate-meal-button {
   font-size: large;
 }
 @media only screen and (max-width: 600px) {

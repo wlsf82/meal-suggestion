@@ -11,6 +11,7 @@ const ingredientsList = document.getElementById('ingredients-list')
 const generateMealButton = document.getElementById('generate-meal-button')
 const mealTypeFilter = document.getElementById('meal-type-filter')
 const searchField = document.getElementById('search-field')
+const searchButton = document.querySelector('#search-container button[type="submit"]')
 
 // eslint-disable-next-line no-undef
 let filteredMeals = [...meals]
@@ -39,6 +40,10 @@ searchField.addEventListener('change', e => {
       showIngredients(filteredMeal.ingredients)
     }
   })
+})
+
+searchButton.addEventListener('click', e => {
+  e.preventDefault()
 })
 
 function generateMeal() {

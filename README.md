@@ -32,6 +32,8 @@ E para a auto-correção de problemas encontrados pela análise estática de có
 
 Este projeto utiliza o [Cypress.io](https://cypress.io) para os testes _end-to-end_, onde você pode executá-los tanto em modo interativo, como em modo _headless_.
 
+Além disso, durante a integração e deploy contínuo, as execuções dos testes são gravadas no serviço [_Cypress Cloud_](https://cloud.cypress.io/projects/dyjimv/runs).
+
 ### Modo _headless_
 
 Execute `npm test` (ou `npm t`, para a versão curta) para rodar todos os testes em modo _headless_.

@@ -185,4 +185,9 @@ const meals = [
     ingredients: ['humus ou margarina', 'pão francês', 'tomate', 'pepino', 'pimenta do reino'],
     type: 'sandwich'
   },
+  {
+    name: 'Sanduíche de abacate',
+    ingredients: ['abacate', 'pão', 'pimenta di reino', 'sal'],
+    type: 'sandwich'
+  },
 ]

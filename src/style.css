@@ -15,7 +15,7 @@ select {
   margin-top: 12px;
 }
 #search-container input {
-  width: 290px;
+  width: 250px;
   border: 1px solid #001858 ;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

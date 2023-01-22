@@ -187,7 +187,7 @@ const meals = [
   },
   {
     name: 'Sanduíche de abacate',
-    ingredients: ['abacate', 'pão', 'pimenta di reino', 'sal'],
+    ingredients: ['abacate', 'pão', 'pimenta do reino', 'sal'],
     type: 'sandwich'
   },
 ]

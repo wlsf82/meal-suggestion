@@ -107,7 +107,7 @@ const meals = [
   },
   {
     name: 'Ramen',
-    ingredients: ['massa de ramen', 'brócolis', 'cenoura', 'edameme', 'tofu', 'cebolinha', 'misô'],
+    ingredients: ['massa de ramen', 'brócolis', 'cenoura', 'edamame', 'tofu', 'cebolinha', 'misô', 'milho'],
     type: 'soup'
   },
   {

@@ -38,3 +38,9 @@ h1 {
   border: 2px solid #001858;
   font-size: large;
 }
+@media only screen and (max-width: 600px) {
+  #generate-meal-button {
+    margin: 0 auto;
+    display: block;
+  }
+}

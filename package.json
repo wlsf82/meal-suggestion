@@ -4,8 +4,8 @@
   "description": "Gerador de refeições veganas com suas listas de ingredientes.",
   "main": "cypress.config.js",
   "scripts": {
-    "lint": "eslint src/*.js && eslint cypress/**/*.js && eslint cypress.config.js",
-    "lint:fix": "eslint src/*.js --fix && eslint cypress/**/*.js --fix && eslint cypress.config.js --fix",
+    "lint": "eslint src/*.js && eslint cypress/e2e/*.js && eslint cypress.config.js",
+    "lint:fix": "eslint src/*.js --fix && eslint cypress/e2e/*.js --fix && eslint cypress.config.js --fix",
     "cy:open": "cypress open",
     "cy:open:prod": "cypress open --env environment=prod",
     "test": "cypress run",

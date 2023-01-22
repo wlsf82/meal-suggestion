@@ -91,8 +91,8 @@ const meals = [
     type: 'salad'
   },
   {
-    name: 'Salada de quinoa e pistachos',
-    ingredients: ['quinoa', 'pistacho', 'cenoura ralada', 'ervilha', 'edamame', 'molho de gengibre', 'coentro', 'pepino ralado', 'agave'],
+    name: 'Salada de quinoa e pistaches',
+    ingredients: ['quinoa', 'pistache', 'cenoura ralada', 'ervilha', 'edamame', 'molho de gengibre', 'coentro', 'pepino ralado', 'agave'],
     type: 'salad'
   },
   {

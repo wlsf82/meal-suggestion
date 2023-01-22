@@ -6,7 +6,9 @@ describe('Meal suggestion', () => {
       cy.visit('./src/index.html')
     }
     cy.title().should('be.equal', 'Sugestão de Refeição Vegana')
-    cy.contains('h1', 'Refeição vegana 🌱').should('be.visible')
+    cy.contains('h1', 'Refeição vegana 🌱')
+      .as('heading')
+      .should('be.visible')
     cy.contains('#meal-name', 'Refeição: ')
       .as('mealName')
       .should('be.visible')
@@ -134,5 +136,9 @@ describe('Meal suggestion', () => {
       .should('be.visible')
       .its('length')
       .should('be.at.least', 1)
+  })
+
+  it('shows h1 centralized on mobile viewport', { viewportWidth: 400 }, () => {
+    cy.get('@heading').should('have.css', 'text-align', 'center')
   })
 })

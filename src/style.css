@@ -39,6 +39,9 @@ h1 {
   font-size: large;
 }
 @media only screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
   #generate-meal-button {
     margin: 0 auto;
     display: block;

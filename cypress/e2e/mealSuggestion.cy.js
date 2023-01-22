@@ -9,6 +9,18 @@ describe('Meal suggestion', () => {
     cy.contains('h1', 'Refeição vegana 🌱')
       .as('heading')
       .should('be.visible')
+    cy.contains('#filter-container label', 'Tipo:').should('be.visible')
+    cy.get('#meal-type-filter')
+      .as('filterSelectField')
+      .should('be.visible')
+      .and('have.value', 'all')
+    cy.contains('#search-container label', 'Busca:').should('be.visible')
+    cy.get('#search-field')
+      .as('searchField')
+      .should('be.visible')
+    cy.get('#search-container button')
+      .as('searchButton')
+      .should('be.visible')
     cy.contains('#meal-name', 'Refeição: ')
       .as('mealName')
       .should('be.visible')
@@ -40,7 +52,7 @@ describe('Meal suggestion', () => {
   })
 
   it('shows a filtered meal suggestion', () => {
-    cy.get('select#meal-type-filter').select('Saladas')
+    cy.get('@filterSelectField').select('Saladas')
 
     cy.get('@mealName')
       .should('be.visible')
@@ -53,9 +65,8 @@ describe('Meal suggestion', () => {
   })
 
   it('searches for a meal by typing and clicking the submit button', () => {
-    cy.get('#search-field')
-      .type('Ramen')
-    cy.get('#search-container button[type="submit"]')
+    cy.get('@searchField').type('Ramen')
+    cy.get('@searchButton')
       .click()
       .blur()
 
@@ -78,9 +89,8 @@ describe('Meal suggestion', () => {
   })
 
   it('makes sure trim works when searching', () => {
-    cy.get('#search-field')
-      .type('pepino    ')
-    cy.get('#search-container button[type="submit"]')
+    cy.get('@searchField').type('pepino    ')
+    cy.get('@searchButton')
       .click()
       .blur()
 
@@ -100,7 +110,7 @@ describe('Meal suggestion', () => {
   })
 
   it('searches for a meal by typing and pressing ENTER', () => {
-    cy.get('#search-field')
+    cy.get('@searchField')
       .type('Ramen{enter}')
       .blur()
 
@@ -123,7 +133,7 @@ describe('Meal suggestion', () => {
   })
 
   it('searches for a meal by part of its name', () => {
-    cy.get('#search-field')
+    cy.get('@searchField')
       .type('Ram{enter}')
       .blur()
 
@@ -146,8 +156,8 @@ describe('Meal suggestion', () => {
   })
 
   it('filters and searches for a meal', () => {
-    cy.get('select#meal-type-filter').select('Sopas')
-    cy.get('#search-field')
+    cy.get('@filterSelectField').select('Sopas')
+    cy.get('@searchField')
       .type('Ramen{enter}')
       .blur()
 
@@ -170,8 +180,8 @@ describe('Meal suggestion', () => {
   })
 
   it('filters and searches for a meal (negative scenario)', () => {
-    cy.get('select#meal-type-filter').select('Sopas')
-    cy.get('#search-field')
+    cy.get('@filterSelectField').select('Sopas')
+    cy.get('@searchField')
       .type('Iron Energy{enter}')
       .blur()
 

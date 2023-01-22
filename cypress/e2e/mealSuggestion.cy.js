@@ -6,7 +6,7 @@ describe('Meal suggestion', () => {
       cy.visit('./src/index.html')
     }
     cy.title().should('be.equal', 'Sugestão de Refeição Vegana')
-    cy.contains('h1', 'Gerador de refeição vegana 🌱').should('be.visible')
+    cy.contains('h1', 'Refeição vegana 🌱').should('be.visible')
     cy.contains('#meal-name', 'Refeição: ')
       .as('mealName')
       .should('be.visible')

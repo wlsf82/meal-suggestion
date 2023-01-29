@@ -76,6 +76,11 @@ const meals = [
     type: 'hot'
   },
   {
+    name: 'Almôndegas de seitan com arroz negro',
+    ingredients: ['almôndsgas de seitan', 'arroz negro', 'molho de tomate', 'ervilhas'],
+    type: 'hot'
+  },
+  {
     name: 'Salada de quinoa',
     ingredients: ['quinoa', 'tomate', 'pimentão', 'abacate', 'limão', 'coentro'],
     type: 'salad'

@@ -161,6 +161,26 @@ const meals = [
     type: 'soup'
   },
   {
+    name: 'Creme de couve-flor',
+    ingredients: ['couve-flor', 'batata', 'alho', 'tempero verde', 'manjericão'],
+    type: 'soup'
+  },
+  {
+    name: 'Sopa de brócolis, batata e grão de bico',
+    ingredients: ['brócolis', 'batata', 'grão de bico', 'alho', 'cebola', 'caldo de legumes', 'tempero verde'],
+    type: 'soup'
+  },
+  {
+    name: 'Sopa de côco ao curry com grão de bico e vegetais',
+    ingredients: ['leite de côco', 'grão de bico', 'caldo de legumes', 'champignon', 'curry', 'cebola', 'alho', 'gengibre', 'brócolis', 'cenoura', 'alho poró'],
+    type: 'soup'
+  },
+  {
+    name: 'Creme de milho',
+    ingredients: ['margarina', 'milho', 'batata', 'leite vegetal', 'caldo de legumes'],
+    type: 'soup'
+  },
+  {
     name: 'Sanduíche de milanesa de seitan',
     ingredients: ['maionese ou humus', 'pão integral', 'bife à milanesa de seitan', 'tomate', 'alface'],
     type: 'sandwich'

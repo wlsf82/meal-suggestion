@@ -111,6 +111,11 @@ const meals = [
     type: 'salad'
   },
   {
+    name: 'Salada de rúcula com tomates secos',
+    ingredients: ['rúcula', 'tomates secos'],
+    type: 'salad'
+  },
+  {
     name: 'Ramen',
     ingredients: ['massa de ramen', 'brócolis', 'cenoura', 'edamame', 'tofu', 'cebolinha', 'misô', 'milho'],
     type: 'soup'

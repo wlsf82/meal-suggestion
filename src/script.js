@@ -32,7 +32,7 @@ mealTypeFilter.addEventListener('change', e => {
 let searchedMeal
 
 searchField.addEventListener('change', e => {
-  searchedMeal = e.target.value.toLowerCase().trim()
+  searchedMeal = e.target.value.toLowerCase()
 
   filteredMeals.forEach(filteredMeal => {
     if (filteredMeal.name.toLowerCase().includes(searchedMeal)) {

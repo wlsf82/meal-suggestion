@@ -35,6 +35,12 @@ const meals = [
     ingredients: ['azeite', 'massa de espaguete', 'molho de tomate', 'cebola', 'alho'],
     type: 'hot'
   },
+  
+  {
+    name: 'Panqueca à bolonhesa',
+    ingredients: ['azeite', 'farinha de trigo', 'cenoura/beterraba/espinafre', 'leite vegetal', 'chia', 'cebola', 'alho', 'molho de tomate', 'picado carnal'],
+    type: 'hot'
+  },
   {
     name: 'Chilly',
     ingredients: ['picado carnal', 'feijão vermelho', 'molho de tomate', 'pimenta', 'milho', 'abacate', 'cebola', 'tomate', 'alho', 'pimentão', 'nachos'],

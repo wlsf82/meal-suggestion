@@ -86,6 +86,11 @@ const meals = [
     type: 'hot'
   },
   {
+    name: 'Pizza de picado carnal com milho',
+    ingredients: ['massa de pizza', 'picado carnal', 'milho enlatado', 'molho de tomate', 'orégano'],
+    type: 'hot'
+  },
+  {
     name: 'Salada de quinoa',
     ingredients: ['quinoa', 'tomate', 'pimentão', 'abacate', 'limão', 'coentro'],
     type: 'salad'

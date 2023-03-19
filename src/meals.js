@@ -57,7 +57,7 @@ const meals = [
   },
   {
     name: 'Strogonoff',
-    ingredients: ['proteína', 'arroz', 'cebola', 'alho', 'molho de tomate', 'creme vegetal', 'batata palha ou frita'],
+    ingredients: ['proteína', 'champignon', 'arroz', 'cebola', 'alho', 'molho de tomate', 'creme vegetal', 'batata palha ou frita'],
     type: 'hot'
   },
   {

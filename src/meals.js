@@ -91,6 +91,11 @@ const meals = [
     type: 'hot'
   },
   {
+    name: 'Pizza de brócolis com milho',
+    ingredients: ['massa de pizza', 'brócolis', 'milho enlatado', 'molho de tomate', 'orégano'],
+    type: 'hot'
+  },
+  {
     name: 'Salada de quinoa',
     ingredients: ['quinoa', 'tomate', 'pimentão', 'abacate', 'limão', 'coentro'],
     type: 'salad'

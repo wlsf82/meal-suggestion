@@ -235,4 +235,9 @@ const meals = [
     ingredients: ['abacate', 'pão', 'pimenta do reino', 'sal'],
     type: 'sandwich'
   },
+  {
+    name: 'Sanduíche de vegetais',
+    ingredients: ['pão de sanduíche tostado', 'alface', 'tomate', 'pimentão refogado', 'beringela refogada'],
+    type: 'sandwich'
+  },
 ]

@@ -32,7 +32,7 @@ const meals = [
   },
   {
     name: 'Massa à bolonhesa',
-    ingredients: ['azeite', 'massa de espaguete', 'molho de tomate', 'cebola', 'alho'],
+    ingredients: ['lentilha', 'azeite', 'massa de espaguete', 'molho de tomate', 'cebola', 'alho'],
     type: 'hot'
   },
   {

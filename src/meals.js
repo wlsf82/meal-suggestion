@@ -96,6 +96,11 @@ const meals = [
     type: 'hot'
   },
   {
+    name: 'Noodle com tofu ralado',
+    ingredients: ['noodle (bifum)', 'tofu ralado', 'curcuma', ' páprica', 'caldo de legumes', 'tempero verde', 'cenoura, brócolis ou abobrinha fatiada à gosto'],
+    type: 'hot',
+  },
+  {
     name: 'Salada de quinoa',
     ingredients: ['quinoa', 'tomate', 'pimentão', 'abacate', 'limão', 'coentro'],
     type: 'salad'

@@ -1,6 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 const meals = [
   {
+    name: 'Feijoada',
+    ingredients: ['feijão vermelho', 'abobrinha', 'cenoura', 'cebola', 'alho'],
+    type: 'hot'
+  },
+  {
     name: 'Escondidinho',
     ingredients: ['batata ou aipim', 'picado carnal', 'molho de tomate', 'cebola', 'alho'],
     type: 'hot'

@@ -2,7 +2,7 @@
 const meals = [
   {
     name: 'Feijoada',
-    ingredients: ['feijão vermelho', 'abobrinha', 'cenoura', 'cebola', 'alho'],
+    ingredients: ['feijão vermelho', 'abobrinha', 'cenoura', 'cebola', 'alho', 'couve', 'laranja'],
     type: 'hot'
   },
   {

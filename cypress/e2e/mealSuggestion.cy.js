@@ -47,6 +47,7 @@ describe('Meal suggestion', () => {
     cy.step('Click "Other suggestion" button')
     cy.get('@button')
       .click()
+    cy.get('@button')
       .blur()
 
     cy.step('Assert that meal and ingredients are visible')
@@ -78,6 +79,7 @@ describe('Meal suggestion', () => {
     cy.get('@searchField').type('Ramen')
     cy.get('@searchButton')
       .click()
+    cy.get('@searchButton')
       .blur()
 
     cy.step('Assert specific meal is shown')
@@ -104,6 +106,7 @@ describe('Meal suggestion', () => {
     cy.get('@searchField').type('pepino    ')
     cy.get('@searchButton')
       .click()
+    cy.get('@searchButton')
       .blur()
 
     cy.step('Assert that trim works')
@@ -126,6 +129,7 @@ describe('Meal suggestion', () => {
     cy.step('Type meal and press ENTER')
     cy.get('@searchField')
       .type('Ramen{enter}')
+    cy.get('@searchField')
       .blur()
 
     cy.step('Assert that the correct meal is shown')
@@ -151,6 +155,7 @@ describe('Meal suggestion', () => {
     cy.step('Type part of a meal and press ENTER')
     cy.get('@searchField')
       .type('Ram{enter}')
+    cy.get('@searchField')
       .blur()
 
     cy.step('Assert that the correct meal is shown')
@@ -177,6 +182,7 @@ describe('Meal suggestion', () => {
     cy.get('@filterSelectField').select('Sopas')
     cy.get('@searchField')
       .type('Ramen{enter}')
+    cy.get('@searchField')
       .blur()
 
     cy.step('Assert that specifc soup is shown')
@@ -203,6 +209,7 @@ describe('Meal suggestion', () => {
     cy.get('@filterSelectField').select('Sopas')
     cy.get('@searchField')
       .type('Iron Energy{enter}')
+    cy.get('@searchField')
       .blur()
 
     cy.step('Assert that soup is still visible')

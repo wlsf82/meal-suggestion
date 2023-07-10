@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/wlsf82/meal-suggestion#readme",
   "devDependencies": {
-    "cypress": "^12.15.0",
+    "cypress": "^12.17.1",
     "cypress-plugin-steps": "^1.1.1",
-    "eslint": "^8.42.0",
+    "eslint": "^8.44.0",
     "eslint-plugin-cypress": "^2.13.3"
   }
 }

@@ -69,6 +69,7 @@ function showIngredients(ingredients) {
 
 window.onload = () => {
   generateMeal()
+  console.log('Hello, Cypress Test Replay! 👋')
 }
 
 generateMealButton.addEventListener('click', generateMeal)

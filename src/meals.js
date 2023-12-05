@@ -3,27 +3,32 @@ const meals = [
   {
     name: 'Feijoada',
     ingredients: ['feijão vermelho', 'abobrinha', 'cenoura', 'cebola', 'alho', 'couve', 'laranja'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Escondidinho',
     ingredients: ['batata ou aipim', 'picado carnal', 'molho de tomate', 'cebola', 'alho'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Arroz exótico',
     ingredients: ['arroz', 'tofu', 'brócolis', 'ervilha', 'cenoura'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'À la minuta',
     ingredients: ['batata frita', 'arroz', 'proteína', 'feijão'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Almondegas com arroz',
     ingredients: ['almondegas', 'molho de tomate', 'arroz',],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Lasanha de berinjela',
@@ -38,22 +43,26 @@ const meals = [
   {
     name: 'Massa à bolonhesa',
     ingredients: ['lentilha', 'azeite', 'massa de espaguete', 'molho de tomate', 'cebola', 'alho'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Panqueca à bolonhesa',
     ingredients: ['azeite', 'farinha de trigo', 'cenoura/beterraba/espinafre', 'leite vegetal', 'chia', 'cebola', 'alho', 'molho de tomate', 'picado carnal'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Chilly',
     ingredients: ['picado carnal', 'feijão vermelho', 'molho de tomate', 'pimenta', 'milho', 'abacate', 'cebola', 'tomate', 'alho', 'pimentão', 'nachos'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Carreteiro',
     ingredients: ['proteína', 'arroz', 'cebola', 'alho', 'molho de tomate', 'tempero verde'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Nhoque',
@@ -63,7 +72,8 @@ const meals = [
   {
     name: 'Strogonoff',
     ingredients: ['proteína', 'champignon', 'arroz', 'cebola', 'alho', 'molho de tomate', 'creme vegetal', 'batata palha ou frita'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Galeto de frangos felizes',
@@ -73,27 +83,32 @@ const meals = [
   {
     name: 'Feijão tropeiro',
     ingredients: ['feijão', 'farinha de mandioca', 'cenoura', 'couve', 'cebola', 'alho'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Arroz e feijão',
     ingredients: ['arroz', 'feijão', 'cebola', 'alho'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Tofu e legumes ao shoyo com arroz',
     ingredients: ['arroz', 'tofu', 'pimentão', 'cebola', 'cenoura', 'abobrinha', 'shoyo'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Almôndegas de seitan com arroz negro',
     ingredients: ['almôndsgas de seitan', 'arroz negro', 'molho de tomate', 'ervilhas'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Pizza de picado carnal com milho',
     ingredients: ['massa de pizza', 'picado carnal', 'milho enlatado', 'molho de tomate', 'orégano'],
-    type: 'hot'
+    type: 'hot',
+    highProtein: true
   },
   {
     name: 'Pizza de brócolis com milho',
@@ -118,7 +133,8 @@ const meals = [
   {
     name: 'Saladão',
     ingredients: ['folhas verdes', 'tomate', 'azeitonas', 'milho', 'proteína (ex.: Heura)', 'crutons', 'pimenta'],
-    type: 'salad'
+    type: 'salad',
+    highProtein: true
   },
   {
     name: 'Salada de quinoa e pistaches',
@@ -158,7 +174,8 @@ const meals = [
   {
     name: 'Minestrone',
     ingredients: ['massa para sopa', 'feijão', 'ervilha', 'cenoura', 'molho de tomate'],
-    type: 'soup'
+    type: 'soup',
+    highProtein: true
   },
   {
     name: 'Sopa de batata doce cremosa',
@@ -183,7 +200,8 @@ const meals = [
   {
     name: 'Sopa de lentilha',
     ingredients: ['lentilha', 'cenoura', 'cebola', 'alho', 'tempero verde'],
-    type: 'soup'
+    type: 'soup',
+    highProtein: true
   },
   {
     name: 'Sopa cremosa de brócolis',
@@ -213,7 +231,8 @@ const meals = [
   {
     name: 'Sanduíche de milanesa de seitan',
     ingredients: ['maionese ou humus', 'pão integral', 'bife à milanesa de seitan', 'tomate', 'alface'],
-    type: 'sandwich'
+    type: 'sandwich',
+    highProtein: true
   },
   {
     name: 'Xis Macaco',
@@ -223,12 +242,14 @@ const meals = [
   {
     name: 'Subway',
     ingredients: ['maionese ou humus', 'baguete', 'tomate', 'alface', 'cebola roxa', 'Heura'],
-    type: 'sandwich'
+    type: 'sandwich',
+    highProtein: true
   },
   {
     name: 'Hamburger',
     ingredients: ['maionese ou humus', 'pão de hamburger', 'tomate', 'alface', 'proteína'],
-    type: 'sandwich'
+    type: 'sandwich',
+    highProtein: true
   },
   {
     name: 'Cachorro quente',

@@ -22,6 +22,10 @@ mealTypeFilter.addEventListener('change', e => {
     // eslint-disable-next-line no-undef
     filteredMeals = [...meals]
     generateMeal()
+  } else if (selectedType === 'high-protein') {
+    // eslint-disable-next-line no-undef
+    filteredMeals = meals.filter(meal => meal.highProtein)
+    generateMeal()
   } else {
     // eslint-disable-next-line no-undef
     filteredMeals = meals.filter(meal => meal.type === selectedType)
@@ -54,7 +58,7 @@ function generateMeal() {
 }
 
 function showMealName(meal) {
-  mealName.innerHTML = `Refeição: ${meal.name} (${mealEnum[meal.type]})`
+  mealName.innerHTML = `Refeição: ${meal.name} (${mealEnum[meal.type]}${meal.highProtein ? ' com alto teor de proteína' : ''})`
 }
 
 function showIngredients(ingredients) {

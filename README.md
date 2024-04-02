@@ -3,7 +3,7 @@
 [![CI/CD](https://github.com/wlsf82/meal-suggestion/actions/workflows/cicd.yml/badge.svg)](https://github.com/wlsf82/meal-suggestion/actions)
 [![meal-suggestion](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/simple/dyjimv/main&style=flat&logo=cypress)](https://cloud.cypress.io/projects/dyjimv/runs)
 
-Gerador de refeições veganas com suas listas de ingredientes.
+Gerador de refeições veganas com lista de ingredientes.
 
 ___
 

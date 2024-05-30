@@ -62,8 +62,7 @@ function generateMeal() {
 }
 
 function showMealName(meal) {
-  mealName.innerHTML = `Refeição: ${meal.name} (${mealEnum[meal.type]}${meal.highProtein ? ' com alto teor de proteína' : ''})`
-  mealName.title = `${meal.name} (${mealEnum[meal.type]}${meal.highProtein ? ' com alto teor de proteína' : ''})`
+  mealName.innerHTML = `${meal.name} (${mealEnum[meal.type]}${meal.highProtein ? ' com alto teor de proteína' : ''})`
 }
 
 function showIngredients(ingredients) {

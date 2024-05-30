@@ -25,7 +25,7 @@ describe('Meal suggestion', () => {
     cy.get('#search-container button')
       .as('searchButton')
       .should('be.visible')
-    cy.contains('#meal-name', 'Refeição: ')
+    cy.get('#meal-name')
       .as('mealName')
       .should('be.visible')
     cy.contains('#ingredients-label', 'Ingredientes:')

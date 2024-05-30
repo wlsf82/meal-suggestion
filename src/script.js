@@ -8,7 +8,6 @@ const mealEnum = Object.freeze({
 const mealName = document.getElementById('meal-name')
 const ingredientsLabel = document.getElementById('ingredients-label')
 const ingredientsList = document.getElementById('ingredients-list')
-const generateMealButton = document.getElementById('generate-meal-button')
 const mealTypeFilter = document.getElementById('meal-type-filter')
 const searchField = document.getElementById('search-field')
 const searchButton = document.querySelector('#search-container button[type="submit"]')
@@ -47,7 +46,12 @@ searchField.addEventListener('change', e => {
 })
 
 searchButton.addEventListener('click', e => {
-  e.preventDefault()
+  if (searchField.value) {
+    e.preventDefault()
+    searchField.value = ''
+    return
+  }
+  generateMeal()
 })
 
 function generateMeal() {
@@ -75,5 +79,3 @@ function showIngredients(ingredients) {
 window.onload = () => {
   generateMeal()
 }
-
-generateMealButton.addEventListener('click', generateMeal)

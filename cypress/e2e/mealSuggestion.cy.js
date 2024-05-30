@@ -36,18 +36,15 @@ describe('Meal suggestion', () => {
       .should('be.visible')
       .its('length')
       .should('be.at.least', 1)
-    cy.contains('button', 'Outra sugestão')
-      .as('button')
-      .should('be.visible')
     cy.get('body').should('have.css', 'background-color', 'rgb(255, 255, 255)')
     cy.section('End of pre-conditions')
   })
 
   it('shows one of all meal suggestions', () => {
     cy.step('Click "Other suggestion" button')
-    cy.get('@button')
+    cy.get('@searchButton')
       .click()
-    cy.get('@button')
+    cy.get('@searchButton')
       .blur()
 
     cy.step('Assert that meal and ingredients are visible')

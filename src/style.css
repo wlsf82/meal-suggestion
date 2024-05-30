@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 h1 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #ingredients-label {
@@ -44,17 +44,9 @@ select, input[type="text"], button {
   margin: 0 10px 0 1px;
 }
 
-#generate-meal-button {
-  width: unset;
-  padding: 8px;
-  margin-top: 10px;
-}
-
 label {
   font-weight: 600;
   min-width: 70px;
-  margin-right: 1px;
-  margin-bottom: 15px;
 }
 
 select:hover, input[type="text"]:hover, button:hover {
@@ -85,7 +77,6 @@ ul {
   padding-left: 20px;
   background-color: #f8f9fa;
   box-shadow: 2px 2px 8px rgba(0, 123, 255, 0.1);
-  max-height: 300px;
   overflow-y: auto;
   position: relative
 }
@@ -120,18 +111,11 @@ li:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 50vh;
 }
 
 #meal-name {
-  min-height: 100px;
+  min-height: 120px;
   line-height: normal;
   overflow: visible;
   white-space: normal;
-}
-
-@media (max-width: 480px) {
-  ul {
-    max-height: 150px;
-  }
 }

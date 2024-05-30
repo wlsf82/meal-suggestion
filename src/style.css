@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: #007BFF;
+  color: #0053B3;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
 }
 
 #ingredients-label {
-  color: #0056B3;
+  color: #003470;
 }
 
 #filter-container, #search-container {
@@ -37,7 +37,7 @@ h1 {
 select, input[type="text"], button {
   font-size: 1rem;
   padding: 8px 10px;
-  border: 1px solid #007BFF;
+  border: 1px solid #0053B3;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
   width: 100%;
@@ -50,19 +50,19 @@ label {
 }
 
 select:hover, input[type="text"]:hover, button:hover {
-  border-color: #0056b3;
+  border-color: #003470;
   box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
 }
 
 button {
-  background-color: #007bff;
+  background-color: #0053B3;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #003470;
 }
 
 button:active {
@@ -73,7 +73,7 @@ ul {
   list-style: none;
   padding-left: 0;
   margin-top: 20px;
-  border-left: 3px solid #007BFF;
+  border-left: 3px solid #0053B3;
   padding-left: 20px;
   background-color: #f8f9fa;
   box-shadow: 2px 2px 8px rgba(0, 123, 255, 0.1);

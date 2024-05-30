@@ -114,8 +114,11 @@ li:hover {
 }
 
 #meal-name {
-  min-height: 120px;
   line-height: normal;
   overflow: visible;
   white-space: normal;
+}
+
+#ingredients-label {
+  padding-top: 10px;
 }

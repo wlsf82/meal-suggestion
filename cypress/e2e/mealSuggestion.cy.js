@@ -39,7 +39,7 @@ describe('Meal suggestion', () => {
     cy.contains('button', 'Outra sugestão')
       .as('button')
       .should('be.visible')
-    cy.get('body').should('have.css', 'background-color', 'rgb(254, 246, 228)')
+    cy.get('body').should('have.css', 'background-color', 'rgb(255, 255, 255)')
     cy.section('End of pre-conditions')
   })
 

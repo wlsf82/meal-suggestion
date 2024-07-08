@@ -259,7 +259,7 @@ describe('Meal suggestion', () => {
       .and('contain', 'alho')
       .and('contain', 'tempero verde')
       .its('length')
-      .should('equal', 5)
+      .should('equal', 6)
   })
 
   it('filters and searches for a high-protein meal (negative scenario)', () => {

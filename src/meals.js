@@ -8,7 +8,13 @@ const meals = [
   },
   {
     name: 'Escondidinho',
-    ingredients: ['batata ou aipim', 'picado carnal', 'molho de tomate', 'cebola', 'alho'],
+    ingredients: ['batata ou aipim', 'picado carnal (ou proteína de soja)', 'molho de tomate', 'cebola', 'alho'],
+    type: 'hot',
+    highProtein: true
+  },
+  {
+    name: 'Queijadilla',
+    ingredients: ['tortilla', 'tofu mexido', 'feijão', 'milho', 'levedura nutricional', 'mix de folhas', 'tomate'],
     type: 'hot',
     highProtein: true
   },
@@ -88,7 +94,13 @@ const meals = [
   },
   {
     name: 'Arroz e feijão',
-    ingredients: ['arroz', 'feijão', 'cebola', 'alho'],
+    ingredients: ['arroz', 'feijão', 'cebola', 'alho', 'tofu (ou tempê)', 'vegetais', 'salada'],
+    type: 'hot',
+    highProtein: true
+  },
+  {
+    name: 'Arroz e lentilha',
+    ingredients: ['arroz', 'lentilha', 'cebola', 'alho', 'tofu (ou tempê)', 'vegetais', 'salada'],
     type: 'hot',
     highProtein: true
   },
@@ -133,6 +145,12 @@ const meals = [
   {
     name: 'Saladão',
     ingredients: ['folhas verdes', 'tomate', 'azeitonas', 'milho', 'proteína (ex.: Heura)', 'crutons', 'pimenta'],
+    type: 'salad',
+    highProtein: true
+  },
+  {
+    name: 'Salada de tofu',
+    ingredients: ['mix de folhas', 'tomate', 'legumes cozidos (ou assados)', 'tofu', 'grão de bico', 'quinoa', 'levedura nutricional'],
     type: 'salad',
     highProtein: true
   },
@@ -199,7 +217,13 @@ const meals = [
   },
   {
     name: 'Sopa de lentilha',
-    ingredients: ['lentilha', 'cenoura', 'cebola', 'alho', 'tempero verde'],
+    ingredients: ['lentilha', 'cenoura', 'cebola', 'alho', 'tempero verde', 'tofu mexido'],
+    type: 'soup',
+    highProtein: true
+  },
+  {
+    name: 'Sopa de feijão',
+    ingredients: ['feijão', 'cenoura', 'cebola', 'alho', 'tempero verde', 'tofu mexido'],
     type: 'soup',
     highProtein: true
   },
@@ -280,6 +304,60 @@ const meals = [
     name: 'Sanduíche de tofu mexido',
     ingredients: ['pão', 'tofu natural', 'levedura nutricional', 'alho', 'cúrcuma', 'salada mista'],
     type: 'sandwich',
+    highProtein: true
+  },
+  {
+    name: 'Sanduíche de falafel e tofu',
+    ingredients: ['pão sírio', 'hummus', 'tofu natural', 'falafel', 'mix de folhas', 'tomate', 'pepino'],
+    type: 'sandwich',
+    highProtein: true
+  },
+  {
+    name: 'Proteína + fruta com aveia',
+    ingredients: ['proteína em pó', 'leite de soja', 'fruta', 'farelo de aveia'],
+    type: 'snack',
+    highProtein: true
+  },
+  {
+    name: 'Proteína + pão com tofu',
+    ingredients: ['proteína em pó', 'leite de soja', 'pão', 'tofu mexido'],
+    type: 'snack',
+    highProtein: true
+  },
+  {
+    name: 'Overnight oats',
+    ingredients: ['leite de soja', 'farelo de aveia', 'semente de chia', 'proteína em pó', 'fruta', 'geleia'],
+    type: 'snack',
+    highProtein: true
+  },
+  {
+    name: 'Avocado toast',
+    ingredients: ['abacate', 'pão', 'tomate cereja', 'leite de soja', 'proteína em pó', 'fruta'],
+    type: 'snack',
+    highProtein: true
+  },
+  {
+    name: 'Proteína + Grãomelete',
+    ingredients: ['farinha de grão de bico', 'vegetais', 'leite de soja', 'proteína em pó', 'fruta'],
+    type: 'snack',
+    highProtein: true
+  },
+  {
+    name: 'Proteína + Pão com hummus',
+    ingredients: ['pão', 'hummus', 'leite de soja', 'proteína em pó', 'fruta'],
+    type: 'snack',
+    highProtein: true
+  },
+  {
+    name: 'Barra de proteína e fruta',
+    ingredients: ['barra de proteína', 'fruta'],
+    type: 'snack',
+    highProtein: true
+  },
+  {
+    name: 'Sorvete caseiro',
+    ingredients: ['banana congelada', 'proteína em pó', 'leite vegetal', 'chia', 'granola sem açucar', 'outras frutas (opcional)'],
+    type: 'snack',
     highProtein: true
   },
 ]

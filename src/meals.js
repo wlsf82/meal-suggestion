@@ -343,7 +343,7 @@ const meals = [
     highProtein: true
   },
   {
-    name: 'Proteína + Pão com hummus',
+    name: 'Proteína + pão com hummus',
     ingredients: ['pão', 'hummus', 'leite de soja', 'proteína em pó', 'fruta'],
     type: 'snack',
     highProtein: true

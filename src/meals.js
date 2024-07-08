@@ -276,4 +276,10 @@ const meals = [
     ingredients: ['pão de sanduíche integral', 'húmus', 'tomate', 'sal', 'orégano'],
     type: 'sandwich'
   },
+  {
+    name: 'Sanduíche de tofu mexido',
+    ingredients: ['pão', 'tofu natural', 'levedura nutricional', 'alho', 'cúrcuma', 'salada mista'],
+    type: 'sandwich',
+    highProtein: true
+  },
 ]

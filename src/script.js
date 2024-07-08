@@ -2,6 +2,7 @@ const mealEnum = Object.freeze({
   hot: 'prato quente',
   salad: 'salada',
   sandwich: 'sanduíche',
+  snack: 'lanche',
   soup: 'sopa'
 })
 

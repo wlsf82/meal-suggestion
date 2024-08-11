@@ -112,7 +112,7 @@ const meals = [
   },
   {
     name: 'Almôndegas de seitan com arroz negro',
-    ingredients: ['almôndsgas de seitan', 'arroz negro', 'molho de tomate', 'ervilhas'],
+    ingredients: ['almôndegas de seitan', 'arroz negro', 'molho de tomate', 'ervilhas'],
     type: 'hot',
     highProtein: true
   },

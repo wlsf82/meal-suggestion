@@ -7,6 +7,10 @@ Gerador de refeições veganas com lista de ingredientes.
 
 ___
 
+## Regras de negócio
+
+Para obter uma documentação detalhada de como a aplicação deve funcionar, leia as [regras de negócio](./docs/requirements.md).
+
 ## Pré-requisitos
 
 Para rodar a análise estática de código e os testes automatizados, você vai precisar dos seguintes sistemas instalados em seu computador:

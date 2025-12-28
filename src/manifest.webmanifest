@@ -1,7 +1,7 @@
 {
   "name": "Sugestão de Refeição Vegana",
   "short_name": "Refeição Vegana",
-  "start_url": "./",
+  "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",

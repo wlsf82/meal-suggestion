@@ -79,3 +79,14 @@ function showIngredients(ingredients) {
 window.onload = () => {
   generateMeal()
 }
+
+// Register Service Worker for PWA capabilities
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('./service-worker.js', { scope: './' })
+      .catch(() => {
+        // No-op: SW registration failed (likely not served over HTTPS)
+      })
+  })
+}

@@ -1,14 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0d9488"/>
-      <stop offset="100%" stop-color="#14b8a6"/>
-    </linearGradient>
-  </defs>
-  <rect width="192" height="192" rx="32" fill="url(#g)"/>
-  <g fill="#ffffff">
-    <circle cx="96" cy="72" r="28"/>
-    <path d="M32 152c0-35 28-52 64-52s64 17 64 52v8H32v-8z"/>
-  </g>
-  <text x="96" y="178" font-size="20" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, Segoe UI, Roboto">🌱</text>
+  <text
+    x="96"
+    y="100"
+    font-size="140"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, system-ui, -apple-system, Segoe UI, Roboto"
+  >🌱</text>
 </svg>

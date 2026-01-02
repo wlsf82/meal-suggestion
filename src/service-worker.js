@@ -5,7 +5,7 @@
   - Network-first for navigation
 */
 
-const CACHE_VERSION = 'v2'
+const CACHE_VERSION = 'v4'
 const CACHE_NAME = `meal-suggestion-${CACHE_VERSION}`
 
 const ASSET_URLS = [
@@ -14,6 +14,9 @@ const ASSET_URLS = [
   './script.js',
   './meals.js',
   './manifest.webmanifest',
+  './icons/apple-touch-icon.png',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
   './icons/icon-192.svg',
   './icons/icon-512.svg'
 ]
